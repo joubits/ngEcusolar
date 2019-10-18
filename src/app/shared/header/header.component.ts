@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { InfoHeaderService } from '../../services/info-header.service';
 
 @Component({
   selector: 'header',
@@ -7,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor( public infoHeaderService: InfoHeaderService ) { }
 
   ngOnInit() {
   }

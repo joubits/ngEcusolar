@@ -36,7 +36,7 @@ export class SliderComponent implements OnDestroy, AfterViewInit {
     // this.slidersUrl[0] = 'assets/images/slides/v1-1.jpg';
     // this.slidersUrl[1] = 'assets/images/slides/v1-2.jpg';
     // this.slidersUrl[2] = 'assets/images/slides/v1-3.jpg';
-    console.log(this.slidersData.sliderList[0].url);
+    // console.log(this.slidersData.sliderList[0].url);
   }
 
   getSliderOptions(): any {

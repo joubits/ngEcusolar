@@ -1,7 +1,7 @@
 <slider></slider>
 <!--Start about area-->
 <section class="about-area">
-    <div class="container">
+    <div *ngIf="slidersData.aboutInfo" class="container">
         <div class="row">
             <div class="col-xl-6">
                 <div class="about-image-box">
@@ -9,31 +9,35 @@
                         <span class="icon-solar-energy"></span>
                     </div>
                     <div class="image-box-one">
-                        <img src="assets/images/resources/about-1.png" alt="Awesome Image">
+                        <img *ngIf="slidersData.aboutInfo['about-image1']" 
+                            [src]="slidersData.aboutInfo['about-image1']" alt="Awesome Image">
                     </div>
                     <div class="image-box-two">
-                        <img src="assets/images/resources/about-2.png" alt="Awesome Image">
+                            <img *ngIf="slidersData.aboutInfo['about-image2']" 
+                            [src]="slidersData.aboutInfo['about-image2']" alt="Awesome Image">
                     </div>
                     <div class="image-box-three">
-                        <img src="assets/images/resources/about-3.png" alt="Awesome Image">
+                            <img *ngIf="slidersData.aboutInfo['about-image3']" 
+                            [src]="slidersData.aboutInfo['about-image3']" alt="Awesome Image">
                     </div>
                     <div class="image-box-four">
-                        <img src="assets/images/resources/about-4.png" alt="Awesome Image">
+                            <img *ngIf="slidersData.aboutInfo['about-image4']" 
+                            [src]="slidersData.aboutInfo['about-image4']" alt="Awesome Image">
                     </div>
                 </div>   
             </div>
             <div class="col-xl-6">
                 <div class="about-text">
                     <div class="sec-title">
-                        <p>About Our Company</p>
-                        <div class="title">Simplicity & Efficiency</div>
+                        <p>Acerca de EcuSolar</p>
+                        <div class="title">{{ slidersData.aboutInfo['about-title'] }}</div>
                         <div class="border-box"></div>
                     </div>
                     <div class="inner-content">
-                        <h3>Experience The Power of The Sun at its Finest.</h3>
+                        <h3>{{ slidersData.aboutInfo['about-subtitle'] }}</h3>
                         <div class="text">
-                            <p>These cases are perfectly simple and easy to distinguish. In a free hour, when our power off choice isuntrammelled and when nothing prevents our being able do what we like bestevery pleasure.</p>
-                            <p>Perfectly simple and easy to distinguish. In a free hour, when our power choice is untrammelled and when nothing prevents we give best.</p>
+                            <p>{{ slidersData.aboutInfo['about-description1'] }}</p>
+                            <p>{{ slidersData.aboutInfo['about-description2'] }}</p>
                         </div>
                         <ul class="solar-services">
                             <li class="single-solar-box">

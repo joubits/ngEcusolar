@@ -8,17 +8,29 @@ import { Slider } from '../interfaces/slider.interface'
 export class SlidersService {
 
   sliderList: Slider;
+  aboutInfo:any = [];
+  loading = true;
 
   constructor( private http: HttpClient ) {
     this.cargarSliders();
+    this.getaboutInfo();
   }
 
   private cargarSliders() {
     this.http.get('https://ecusolar-48c94.firebaseio.com/sliders.json')
       .subscribe( (resp:Slider) => {
-        //this.cargada = true;
+        this.loading = false;
         this.sliderList = resp;
-        console.log(this.sliderList);
+        //console.log(this.sliderList);
+      } );
+  }
+
+  private getaboutInfo() {
+    this.http.get('https://ecusolar-48c94.firebaseio.com/aboutHome.json')
+      .subscribe( (resp:any) => {
+        this.loading = false;
+        this.aboutInfo = resp;
+        console.log(this.aboutInfo);
       } );
   }
 }

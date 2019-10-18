@@ -1,5 +1,7 @@
-<header></header>
+<!-- Loader -->
+<div class="preloader" [ngStyle]="{'display':slidersData.loading ? 'none' : null }"></div>
+<header *ngIf="!slidersData.loading"></header>
 
-<router-outlet></router-outlet>
+<router-outlet *ngIf="!slidersData.loading"></router-outlet>
 
-<footer></footer>
+<footer *ngIf="!slidersData.loading"></footer>
