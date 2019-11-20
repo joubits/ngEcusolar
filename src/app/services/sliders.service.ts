@@ -8,7 +8,7 @@ import { Slider } from '../interfaces/slider.interface'
 export class SlidersService {
 
   sliderList: Slider;
-  aboutInfo:any = [];
+  homeData:any = [];
   loading = true;
 
   constructor( private http: HttpClient ) {
@@ -26,11 +26,11 @@ export class SlidersService {
   }
 
   private getaboutInfo() {
-    this.http.get('https://ecusolar-48c94.firebaseio.com/aboutHome.json')
+    this.http.get('assets/data/homeData.json')
       .subscribe( (resp:any) => {
         this.loading = false;
-        this.aboutInfo = resp;
-        console.log(this.aboutInfo);
+        this.homeData = resp;
+        //console.log(this.homeData);
       } );
   }
 }

@@ -1,7 +1,7 @@
 <slider></slider>
 <!--Start about area-->
 <section class="about-area">
-    <div *ngIf="slidersData.aboutInfo" class="container">
+    <div *ngIf="slidersData.homeData" class="container">
         <div class="row">
             <div class="col-xl-6">
                 <div class="about-image-box">
@@ -9,35 +9,35 @@
                         <span class="icon-solar-energy"></span>
                     </div>
                     <div class="image-box-one">
-                        <img *ngIf="slidersData.aboutInfo['about-image1']" 
-                            [src]="slidersData.aboutInfo['about-image1']" alt="Awesome Image">
+                        <img *ngIf="slidersData.homeData['about']['about-image1']" 
+                            [src]="slidersData.homeData['about']['about-image1']" alt="Awesome Image">
                     </div>
                     <div class="image-box-two">
-                            <img *ngIf="slidersData.aboutInfo['about-image2']" 
-                            [src]="slidersData.aboutInfo['about-image2']" alt="Awesome Image">
+                            <img *ngIf="slidersData.homeData['about']['about-image2']" 
+                            [src]="slidersData.homeData['about']['about-image2']" alt="Awesome Image">
                     </div>
                     <div class="image-box-three">
-                            <img *ngIf="slidersData.aboutInfo['about-image3']" 
-                            [src]="slidersData.aboutInfo['about-image3']" alt="Awesome Image">
+                            <img *ngIf="slidersData.homeData['about']['about-image3']" 
+                            [src]="slidersData.homeData['about']['about-image3']" alt="Awesome Image">
                     </div>
                     <div class="image-box-four">
-                            <img *ngIf="slidersData.aboutInfo['about-image4']" 
-                            [src]="slidersData.aboutInfo['about-image4']" alt="Awesome Image">
+                            <img *ngIf="slidersData.homeData['about']['about-image4']" 
+                            [src]="slidersData.homeData['about']['about-image4']" alt="Awesome Image">
                     </div>
                 </div>   
             </div>
             <div class="col-xl-6">
                 <div class="about-text">
                     <div class="sec-title">
-                        <p>Acerca de EcuSolar</p>
-                        <div class="title">{{ slidersData.aboutInfo['about-title'] }}</div>
+                        <p>Identidad Empresarial</p>
+                        <div class="title">{{ slidersData.homeData['about']['about-title'] }}</div>
                         <div class="border-box"></div>
                     </div>
                     <div class="inner-content">
-                        <h3>{{ slidersData.aboutInfo['about-subtitle'] }}</h3>
+                        <h3>{{ slidersData.homeData['about']['about-subtitle'] }}</h3>
                         <div class="text">
-                            <p>{{ slidersData.aboutInfo['about-description1'] }}</p>
-                            <p>{{ slidersData.aboutInfo['about-description2'] }}</p>
+                            <p>{{ slidersData.homeData['about']['about-description1'] }}</p>
+                            <p>{{ slidersData.homeData['about']['about-description2'] }}</p>
                         </div>
                         <ul class="solar-services">
                             <li class="single-solar-box">
@@ -45,7 +45,7 @@
                                     <span class="icon-farm"></span>    
                                 </div> 
                                 <div class="title">
-                                    <h3>Solar In<br> Agriculture Farm</h3>
+                                    <h3>Energía Solar para<br>sectores rurales</h3>
                                 </div>   
                             </li>
                             <li class="single-solar-box">
@@ -53,12 +53,12 @@
                                     <span class="icon-farming-and-gardening"></span>    
                                 </div> 
                                 <div class="title">
-                                    <h3>Solar In<br> Residential Areas</h3>
+                                    <h3>Energía Solar<br>empresarial</h3>
                                 </div>   
                             </li>
                         </ul>
                         <div class="button">
-                            <a class="btn-two" href="#">More About Solartech<span class="icon-null"></span></a>
+                            <a class="btn-two" href="#">Ver más de EcuSolar<span class="icon-null"></span></a>
                         </div>
                     </div>
                 </div>
@@ -68,4 +68,208 @@
     </div>    
 </section>
 <!--End about Area-->
+
+<!--Start slogan area-->
+<section class="slogan-area martop-minus">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="inner-content fix">
+                    <div class="title float-left">
+                        <h2>¿Deseas eliminar parcial o <br> 
+                            totalmente el consumo eléctrico en las planillas?</h2>
+                    </div>
+                    <div class="button float-right">
+                        <a class="btn-three" href="#">Contáctenos...<span class="icon-null"></span></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</section>           
+<!--End slogan area-->
+
+<!--Start services style1 area-->
+<section class="services-style1-area">
+    <div *ngIf="slidersData.homeData" class="container">
+        <div class="sec-title with-text text-center">
+            <p>{{ slidersData.homeData['services']['title'] }}</p>
+            <div class="title">{{ slidersData.homeData['services']['description1'] }}</div>
+            <div class="border-box center"></div>
+            <span>{{ slidersData.homeData['services']['description2'] }}</span>
+        </div>
+        <div *ngIf="slidersData.homeData['services']"  class="row">
+            <!--Start single solution style1--> 
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"> 
+                <div class="single-service-style1">
+                    <div class="img-holder">
+                        <img *ngIf="slidersData.homeData['services']['service-image1']" 
+                                [src]="slidersData.homeData['services']['service-image1']" 
+                                alt="Awesome Image">
+                        <div class="overlay-style-two"></div>
+                        <div class="overlay-content-box">
+                            <div class="icon">
+                                <span class="icon-drill"></span>    
+                            </div>
+                            <div class="title">
+                                <h3>{{ slidersData.homeData['services']['service-type1'] }}</h3>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="text-holder">
+                        <p>{{  slidersData.homeData['services']['service-description1'] }}</p>
+                        <div class="button">
+                            <a class="btn-two" href="#">Ver más<span class="icon-null"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End single solution style1-->
+
+            <!--Start single solution style1--> 
+             <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"> 
+                <div class="single-service-style1">
+                    <div class="img-holder">
+                        <img *ngIf="slidersData.homeData['services']['service-image2']" 
+                                [src]="slidersData.homeData['services']['service-image2']" 
+                                alt="Awesome Image">
+                        <div class="overlay-style-two"></div>
+                        <div class="overlay-content-box">
+                            <div class="icon">
+                                <span class="icon-drill"></span>    
+                            </div>
+                            <div class="title">
+                                <h3>{{ slidersData.homeData['services']['service-type2'] }}</h3>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="text-holder">
+                        <p>{{  slidersData.homeData['services']['service-description2'] }}</p>
+                        <!-- <div class="button">
+                            <a class="btn-two" href="#">Read More<span class="icon-null"></span></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!--End single solution style1-->
+
+            <!--Start single solution style1--> 
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12"> 
+                <div class="single-service-style1">
+                    <div class="img-holder">
+                        <img *ngIf="slidersData.homeData['services']['service-image3']" 
+                                [src]="slidersData.homeData['services']['service-image3']" 
+                                alt="Awesome Image">
+                        <div class="overlay-style-two"></div>
+                        <div class="overlay-content-box">
+                            <div class="icon">
+                                <span class="icon-drill"></span>    
+                            </div>
+                            <div class="title">
+                                <h3>{{ slidersData.homeData['services']['service-type3'] }}</h3>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="text-holder">
+                        <p>{{  slidersData.homeData['services']['service-description3'] }}</p>
+                        <!-- <div class="button">
+                            <a class="btn-two" href="#">Read More<span class="icon-null"></span></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!--End single solution style1-->
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="emergency-call wow slideInUp" data-wow-delay="200ms" data-wow-duration="1500ms"> 
+                    <h6>Any Emergency? Call our 24/7 customer support team at <span>1800.123.456</span></h6>
+                </div>
+            </div>
+        </div> 
+    </div>
+</section>
+<!--End services style1 area-->
+
+<!--Start Why Choose Area-->
+<section class="why-choose-area secpd1">
+    <div class="container">
+        <div class="sec-title">
+            <p>Benefits of Solar Energy</p>
+            <div class="title">Why Solar Energy is Best</div>
+            <div class="border-box"></div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="choose-carousel owl-carousel owl-theme">
+                    <!--Start Single Choose Box-->
+                    <div class="single-choose-box text-center">
+                        <h3><a href="#">Generate<br> Own Electricity</a></h3>
+                        <span class="icon-null-1"></span>
+                        <div class="button">
+                            <a href="#"><span class="icon-null"></span></a>    
+                        </div> 
+                        <div class="overlay-content">
+                            <h3><a href="#">Generate<br> Own Electricity</a></h3>
+                            <p>Actual teachings of the great explorer of the truth, the masters builder of human all happiness.</p>
+                            <div class="button">
+                                <a href="#"><span class="icon-null"></span></a>    
+                            </div>     
+                        </div>       
+                    </div>
+                    <!--End Single Choose Box-->
+                    <!--Start Single Choose Box-->
+                    <div class="single-choose-box text-center">
+                        <h3><a href="#">Improve<br> The Environment</a></h3>
+                        <span class="icon-ecology"></span>
+                        <div class="button">
+                            <a href="#"><span class="icon-null"></span></a>    
+                        </div> 
+                        <div class="overlay-content">
+                            <h3><a href="#">Improve<br> The Environment</a></h3>
+                            <p>Actual teachings of the great explorer of the truth, the masters builder of human all happiness.</p>
+                            <div class="button">
+                                <a href="#"><span class="icon-null"></span></a>    
+                            </div>     
+                        </div>       
+                    </div>
+                    <!--End Single Choose Box-->
+                    <!--Start Single Choose Box-->
+                    <div class="single-choose-box text-center">
+                        <h3><a href="#">Lower<br> Power Cost</a></h3>
+                        <span class="icon-solar-panel"></span>
+                        <div class="button">
+                            <a href="#"><span class="icon-null"></span></a>    
+                        </div> 
+                        <div class="overlay-content">
+                            <h3><a href="#">Lower<br> Power Cost</a></h3>
+                            <p>Actual teachings of the great explorer of the truth, the masters builder of human all happiness.</p>
+                            <div class="button">
+                                <a href="#"><span class="icon-null"></span></a>    
+                            </div>     
+                        </div>       
+                    </div>
+                    <!--End Single Choose Box-->
+                    <!--Start Single Choose Box-->
+                    <div class="single-choose-box text-center">
+                        <h3><a href="#">Reduce<br> Electricity bills</a></h3>
+                        <span class="icon-money"></span>
+                        <div class="button">
+                            <a href="#"><span class="icon-null"></span></a>    
+                        </div> 
+                        <div class="overlay-content">
+                            <h3><a href="#">Reduce<br> Electricity bills</a></h3>
+                            <p>Actual teachings of the great explorer of the truth, the masters builder of human all happiness.</p>
+                            <div class="button">
+                                <a href="#"><span class="icon-null"></span></a>    
+                            </div>     
+                        </div>       
+                    </div>
+                    <!--End Single Choose Box-->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!--End Why Choose Area-->
 

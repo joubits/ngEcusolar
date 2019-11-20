@@ -1,0 +1,26 @@
+{
+  "about" : {
+    "about-description1" : "Ecuador es uno de los países clave dentro de la región Latinoamericana, ya que posee una posición privilegiada con una irradiación homogénea durante todo el año – con una variación de entre 3,35 KWh/ metro cuadrado en mayo y los 4,33 KWh/ metro cuadrado en septiembre- lo que hace más eficiente y menos costoso el uso de la energía fotovoltaica para impulsar su industria a un coste menor que con la utilización de otras fuentes, reduciendo su dependencia energética de hidrocarburos.",
+    "about-description2" : "Energía solar integral para residencias o empresas, Iluminación LED a base de energía solar, Vigilancia multimedia a base de energía solar.",
+    "about-image1" : "assets/images/about/about1.jpg",
+    "about-image2" : "assets/images/about/about2.jpg",
+    "about-image3" : "assets/images/about/about4.jpg",
+    "about-image4" : "assets/images/about/about3.jpg",
+    "about-subtitle" : "Recicla Energía Solar",
+    "about-title" : "Identidad Empresarial"
+  },
+  "services" : {
+    "description1" : "Recicla energía solar con los expertos",
+    "description2" : "Nuestro servicio especializado tiene como objetivo cumplir los tres pilares de la sostenibilidad: El Social, Económico y Ambiental",
+    "service-description1" : "Visita al lugar mismo donde se requiere electricidad, para constatar los detalles imperativos para el diseño y la planificación de la implementación del sistema solar fotovoltaico",
+    "service-description2" : "Luego del diseño y planificación de proyecto, se procede a la correcta instalación del sistema solar fotovoltaico siguiendo lo diseñado y planificado en el proyecto",
+    "service-description3" : "Esta consultoría consiste en guiar al dueño del sistema solar fotovoltaico ya instalado, sobre el correcto funcionamiento y utilización del mismo. Al mismo tiempo, se planifica visitas de revisión y mantenimiento del sistema",
+    "service-image1" : "assets/images/services/services1.jpg",
+    "service-image2" : "assets/images/services/services2.jpg",
+    "service-image3" : "assets/images/services/services3.jpg",
+    "service-type1" : "Estudio Técnico",
+    "service-type2" : "sistema solar fotovoltaico",
+    "service-type3" : "Asesoría",
+    "title" : "Nuestros Servicios"
+  }
+}
