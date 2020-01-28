@@ -30,7 +30,7 @@ export class SlidersService {
       .subscribe( (resp:any) => {
         this.loading = false;
         this.homeData = resp;
-        //console.log(this.homeData);
+        console.log(this.homeData);
       } );
   }
 }

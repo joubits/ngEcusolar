@@ -22,5 +22,9 @@
     "service-type2" : "sistema solar fotovoltaico",
     "service-type3" : "Asesoría",
     "title" : "Nuestros Servicios"
+  },
+  "benefits" : {
+    "benefit1-title" : "Generar su propia electricidad",
+    "benefit1-description": "Con esto se tendrá total independencia energética" 
   }
 }
